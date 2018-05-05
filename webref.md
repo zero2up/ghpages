@@ -11,6 +11,9 @@
 -------------
 [Markdown](https://www.jianshu.com/p/b03a8d7b1719)
 
+[MobaXterm](https://www.cnblogs.com/sjqlwy/p/mobaxterm.html)
+Remote environment: Xfce4 desktop
+
 [安装Node.JS](https://linux.cn/article-5766-1.html)
 ```
 ./configure
@@ -24,9 +27,13 @@ vim test.js
 node test.js
 ```
 
-[安装hexo](http://ibruce.info/2013/11/22/hexo-your-blog/)
+[安装及使用hexo](http://ibruce.info/2013/11/22/hexo-your-blog/)
+
+[documents](https://hexo.io/docs/setup.html)
+
+[configuration](https://hexo.io/docs/configuration.html)
 ```
-npm install -g hexo
+sudo npm install -g hexo
 ```
 ```
 hexo init <your folder>
@@ -35,4 +42,26 @@ or
 
 cd yourfolder
 hexo init
+```
+```
+hexo generate
+hexo server
+hexo new "postName" #新建文章
+hexo new page "pageName" #新建页面
+```
+```
+vim _config.yml
+    deploy:
+
+        type: git
+
+        repo: https://github.com/zero2up/zero2up.github.io.git
+
+        branch: master
+
+
+npm install hexo-deployer-git --save
+
+hexo deploy
+
 ```
