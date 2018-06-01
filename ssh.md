@@ -1,14 +1,17 @@
-> $ cd ~/.ssh
-
-> $ ls
-
+``` 
+cd ~/.ssh
+ls
+```
 没有id_rsa 和 id_rsa.pub
 
-> $ ssh-keygen -t rsa -C "email@address" 
-
+```
+ssh-keygen -t rsa -C "email@address" 
+```
 一直回车就好
 
->$ ls
+```
+ls
+```
 
 有id_rsa 和 id_rsa.pub
 
